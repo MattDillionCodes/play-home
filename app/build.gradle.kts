@@ -16,7 +16,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.matthew.playhome"
+        applicationId = "io.github.mattdillioncodes.playhome"
         minSdk = 31 // QM5K runs Android TV 12 (API 31)
         targetSdk = 35
         versionCode = 1

@@ -35,13 +35,13 @@ adb install app-release.apk
 Open Play Home from the TV's app list. To make it what the Home button opens:
 
 ```bash
-adb shell cmd package set-home-activity com.matthew.playhome/.HomeActivity
+adb shell cmd package set-home-activity io.github.mattdillioncodes.playhome/com.matthew.playhome.HomeActivity
 ```
 
 Some Google TV builds keep sending Home to their own launcher until it's disabled
 (`adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx`, or
 `com.google.android.tvlauncher` on older ones). Re-enable it with `pm enable` to undo.
-Uninstall Play Home with `adb uninstall com.matthew.playhome`.
+Uninstall Play Home with `adb uninstall io.github.mattdillioncodes.playhome`.
 
 ## Privacy
 

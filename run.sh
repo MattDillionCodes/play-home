@@ -28,5 +28,5 @@ $ADB install -r app/build/outputs/apk/debug/app-debug.apk
 # Home is a role on Android 10+, and the stock launcher outranks it until it's disabled (this emulator only).
 $ADB shell cmd role add-role-holder android.app.role.HOME com.matthew.playhome 0
 $ADB shell pm disable-user --user 0 com.google.android.tvlauncher >/dev/null 2>&1 || true
-$ADB shell am start -n com.matthew.playhome/.HomeActivity >/dev/null
+$ADB shell am start -n io.github.mattdillioncodes.playhome/com.matthew.playhome.HomeActivity >/dev/null
 echo "Play Home is running on $ANDROID_SERIAL ($AVD)"
